@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <!-- ▼ セキュリティ設定（CSP）：下に書いた場所以外からは、スクリプト・画像・フォントなどを読み込まない
+       ・script … このサイト内のファイルのみ（ページ内に直接書いたスクリプトも禁止）
+       ・style/font … このサイト内と Google Fonts のみ
+       ・img … このサイト内のみ
+       ・require-trusted-types-for … HTMLを文字列で直接書き込む危険な処理を禁止（対応ブラウザのみ）
+       ※ GitHub Pages では送信側の設定（ヘッダー）を変えられないため、ここでできる対策をまとめています -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; manifest-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ▼ SEO基本設定 -->
+  <title>AI業務効率化サポート | 谷川 潤</title>
+  <meta name="description" content="美容サロン・店舗経営者向けのAI業務効率化サポート。シフト管理、在庫管理、売上集計、報告書作成など、日々の面倒な作業を効率化します。">
+  <meta name="theme-color" content="#1c1c1c">
+
+  <!-- ▼ 公開URL（URLを変えるときは、この3行・sitemap.xml・robots.txt をまとめて書き換え） -->
+  <link rel="canonical" href="https://tanij1014-rgb.github.io/ai-support/">
+  <meta property="og:url" content="https://tanij1014-rgb.github.io/ai-support/">
+  <meta property="og:image" content="https://tanij1014-rgb.github.io/ai-support/assets/images/ogp.png">
+
+  <!-- ▼ OGP（URLを共有したときに表示される情報） -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="AI業務効率化サポート | 谷川 潤">
+  <meta property="og:title" content="AI業務効率化サポート | 谷川 潤">
+  <meta property="og:description" content="その面倒な作業もっとラクにしませんか？ シフト管理・在庫管理・売上集計・報告書作成など、店舗の管理業務を効率化します。">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="その面倒な作業もっとラクにしませんか？ AI業務効率化サポート 谷川 潤">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ▼ アイコン -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- ▼ フォント（英字：Marcellus／日本語：Noto Serif JP）※動画編集サイトと共通 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=20261106t">
+  <script src="js/boot.js?v=20261106t"></script>
+  <script src="config.js?v=20261106t" defer></script>
+  <script src="content.js?v=20261106t" defer></script>
+  <script src="js/metrics.js?v=20261106t" defer></script>
+  <script src="js/vendor/budoux-ja.js?v=20261106t" defer></script>
+  <script src="js/main.js?v=20261106t" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="ページの先頭へ">
+      <span class="brand-name" data-name>谷川 潤</span><span class="brand-tag">AI業務効率化サポート</span>
+    </a>
+    <a class="header-contact" href="#contact"><span lang="en">Contact</span><span class="visually-hidden">（お問い合わせ）</span><span class="plus" aria-hidden="true"></span></a>
+  </header>
+
+  <!-- ===== 画面下のメニュー ===== -->
+  <nav class="dock" aria-label="メインメニュー">
+    <ul>
+      <li><a href="#services">サービス</a></li>
+      <li><a href="#cases">提案例</a></li>
+      <li><a href="#profile">プロフィール</a></li>
+      <li><a href="#pricing">料金</a></li>
+      <li data-video-item hidden><a href="#" data-video-link target="_blank" rel="noopener noreferrer">動画編集<span class="ext" aria-hidden="true"></span><span class="visually-hidden">サイト（新しいタブで開きます）</span></a></li>
+      <li><a href="#contact">お問合せ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- ===== SECTION 01：ファーストビュー ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <!-- 大きな英字は専用の段に置き、本文やボタンと横並びにしない（重なり防止） -->
+        <p class="hero-display" aria-hidden="true"><span>Work</span> <span>Smarter</span></p>
+        <div class="hero-body">
+          <div class="hero-main">
+            <p class="hero-role">経営者のための<wbr>AI業務効率化サポート</p>
+            <h1 class="hero-title" id="hero-title"><span class="nw">その面倒な作業</span><br><span class="nw">もっとラクに</span><wbr><span class="nw">しませんか？</span></h1>
+          </div>
+          <div class="hero-sub">
+            <p class="hero-lead"><span class="hero-lead-strong">AIと業務改善の力で、日々の作業時間を削減。</span><br>シフト管理、在庫管理、売上集計、報告書作成など、時間のかかる業務を効率化し、本来の仕事に集中できる環境づくりをサポートします。</p>
+            <p class="hero-name"><span data-name>谷川 潤</span></p>
+            <div class="hero-actions">
+              <a class="btn btn-fill" href="#cases">業務改善の提案例を見る<span class="arrow" aria-hidden="true"></span></a>
+              <a class="btn btn-line" href="#contact">メールで相談する<span class="plus" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 業務改善イメージ（数値は表示しない） -->
+      <div class="wrap">
+        <div class="hero-flows" role="group" aria-label="業務改善のイメージ">
+          <p class="hero-flows-label"><span lang="en">Image</span>業務改善のイメージ</p>
+          <ul class="hero-flow-list">
+            <li class="hero-flow">
+              <p class="hero-flow-en" lang="en" aria-hidden="true">Shift</p>
+              <p class="hero-flow-title">シフト管理</p>
+              <p class="hero-flow-before">バラバラの希望を手作業で転記</p>
+              <p class="hero-flow-after"><span class="arrow" aria-hidden="true"></span>フォームから自動で一覧に</p>
+            </li>
+            <li class="hero-flow">
+              <p class="hero-flow-en" lang="en" aria-hidden="true">Stock</p>
+              <p class="hero-flow-title">在庫管理</p>
+              <p class="hero-flow-before">棚を見て数え、メモで管理</p>
+              <p class="hero-flow-after"><span class="arrow" aria-hidden="true"></span>発注が必要になるとメールで通知</p>
+            </li>
+            <li class="hero-flow">
+              <p class="hero-flow-en" lang="en" aria-hidden="true">Sales</p>
+              <p class="hero-flow-title">売上集計</p>
+              <p class="hero-flow-before">毎日の数字を手で集計</p>
+              <p class="hero-flow-after"><span class="arrow" aria-hidden="true"></span>日別・店舗別に自動で集計</p>
+            </li>
+            <li class="hero-flow">
+              <p class="hero-flow-en" lang="en" aria-hidden="true">Report</p>
+              <p class="hero-flow-title">報告書作成</p>
+              <p class="hero-flow-before">毎月ゼロから資料づくり</p>
+              <p class="hero-flow-after"><span class="arrow" aria-hidden="true"></span>集計結果を自動で反映</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 02：お悩み ===== -->
+    <section class="section" id="problems" aria-labelledby="problems-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Problems</span><span class="sec-ja">お悩み</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="problems-title">こんなお悩み、ありませんか？</h2>
+          <p class="sec-lead">日々の店舗運営では、接客やサービス提供以外にも、さまざまな管理業務が発生します。</p>
+        </div>
+        <ul class="dash-list dash-list--grid reveal">
+          <li>毎月のシフト作成に時間がかかる</li>
+          <li>複数店舗の情報をまとめるのが大変</li>
+          <li>在庫の確認や発注管理に手間がかかる</li>
+          <li>売上集計や報告書作成が面倒</li>
+          <li>同じ内容を何度も入力している</li>
+          <li>業務を効率化したいが、何から始めればよいか分からない</li>
+        </ul>
+        <p class="closing reveal">その作業、今のやり方を少し変えるだけで<wbr>効率化できるかもしれません。</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 03：提供できるサービス（内容は content.js） ===== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Services</span><span class="sec-ja">提供サービス</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="services-title">AI活用で、<wbr>日々の業務を<wbr>もっとシンプルに。</h2>
+        </div>
+        <ol class="service-grid" data-services></ol>
+        <div class="tools reveal">
+          <p class="tools-title">活用するツール</p>
+          <ul class="tools-list" data-tools></ul>
+          <p class="tools-note">ツールは手段です。お使いの環境や業務に合わせて、無理なく続けられる方法を選びます。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 04：業務改善の提案例（内容は content.js） ===== -->
+    <section class="section" id="cases" aria-labelledby="cases-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Proposals</span><span class="sec-ja">業務改善の提案例</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="cases-title">こんな業務を効率化できます。</h2>
+          <p class="sec-lead">実際の店舗業務を想定した、3つの業務改善アイデアをご紹介します。</p>
+        </div>
+        <p class="case-disclaimer reveal" role="note"><span class="note-mark" aria-hidden="true">※</span><span>以下は<strong>導入前の提案例</strong>です（導入実績ではありません）。機能や改善効果は、現状の業務内容を確認したうえで個別にご提案します。</span></p>
+        <div class="case-list" data-cases></div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 05：導入によって得られる価値 ===== -->
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Value</span><span class="sec-ja">導入によって得られる価値</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="benefits-title">作業時間を減らし、<wbr>大切な仕事に<wbr>集中できる環境へ。</h2>
+        </div>
+        <ol class="col-list reveal">
+          <li>
+            <p class="col-no" lang="en" aria-hidden="true">01</p>
+            <h3 class="col-title">時間を生み出す</h3>
+            <p>繰り返し作業を効率化し、接客や店舗運営に使える時間を増やします。</p>
+          </li>
+          <li>
+            <p class="col-no" lang="en" aria-hidden="true">02</p>
+            <h3 class="col-title">ミスや負担を減らす</h3>
+            <p>手入力や転記などの作業を減らし、確認作業の負担を軽減します。</p>
+          </li>
+          <li>
+            <p class="col-no" lang="en" aria-hidden="true">03</p>
+            <h3 class="col-title">管理しやすい仕組みをつくる</h3>
+            <p>必要な情報を整理し、スタッフや店舗の状況を把握しやすくします。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 06：選ばれる理由 ===== -->
+    <section class="section" id="strengths" aria-labelledby="strengths-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Strengths</span><span class="sec-ja">選ばれる理由</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="strengths-title">現場を知っているからこそ、<wbr>実務に合った改善を。</h2>
+        </div>
+        <ol class="strengths reveal">
+          <li>
+            <span class="strength-no" lang="en" aria-hidden="true">01</span>
+            <div>
+              <h3 class="strength-title">現場管理の経験</h3>
+              <p>これまで業務マネージャー・拠点マネージャーとして、現場運営、進捗管理、業務改善に携わってきました。</p>
+            </div>
+          </li>
+          <li>
+            <span class="strength-no" lang="en" aria-hidden="true">02</span>
+            <div>
+              <h3 class="strength-title">実際に使える仕組みづくり</h3>
+              <p>導入すること自体を目的とせず、日々の業務で使いやすい仕組みを大切にしています。</p>
+            </div>
+          </li>
+          <li>
+            <span class="strength-no" lang="en" aria-hidden="true">03</span>
+            <div>
+              <h3 class="strength-title">導入後も継続してサポート</h3>
+              <p>導入後の保守や、運用に合わせた継続的な改善にも対応します。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 07：プロフィール ===== -->
+    <section class="section" id="profile" aria-labelledby="profile-title">
+      <h2 class="sec-head" id="profile-title"><span class="sec-en" lang="en">About Me</span><span class="sec-ja">プロフィール</span></h2>
+      <div class="wrap">
+        <div class="about">
+          <figure class="about-photo reveal">
+            <!-- 写真は config.js の photo で差し替え（未設定時は仮画像） -->
+            <img data-photo src="assets/images/placeholder-profile.svg" alt="プロフィール写真（準備中）" width="600" height="750" loading="lazy" decoding="async">
+            <figcaption><span class="about-name" data-name>谷川 潤</span><span class="about-role" data-title>AI活用・業務効率化サポート</span></figcaption>
+          </figure>
+          <div class="about-text reveal">
+            <p class="about-lead">日々の仕事が、<br class="br-sp"><wbr>少しでもラクになる仕組みを。</p>
+            <p>これまでコンタクトセンターを中心としたBPO事業で、現場運営や業務管理、業務改善に携わってきました。</p>
+            <p>現在は、そうした現場での経験を活かし、AIやGoogleスプレッドシート、GASなどを使った業務効率化に取り組んでいます。</p>
+            <p>大切にしているのは、難しいシステムを導入することではなく、日々の仕事が少しでもラクになる仕組みをつくることです。</p>
+            <p>「こんな作業も効率化できる？」というご相談から、お気軽にお問い合わせください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 08：ご相談から導入まで ===== -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Flow</span><span class="sec-ja">導入の流れ</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="process-title">ご相談から導入までの流れ</h2>
+        </div>
+        <ol class="process reveal">
+          <li><p class="process-no" lang="en">Step 01</p><h3 class="process-title">お問い合わせ</h3><p>メールでお困りごとをご相談ください。</p></li>
+          <li><p class="process-no" lang="en">Step 02</p><h3 class="process-title">ヒアリング</h3><p>現在の業務内容や課題、ご希望を確認します。</p></li>
+          <li><p class="process-no" lang="en">Step 03</p><h3 class="process-title">改善案・お見積もり</h3><p>業務に合わせた改善方法と費用をご案内します。</p></li>
+          <li><p class="process-no" lang="en">Step 04</p><h3 class="process-title">制作・導入</h3><p>必要な仕組みを構築し、導入を進めます。</p></li>
+          <li><p class="process-no" lang="en">Step 05</p><h3 class="process-title">運用・継続サポート</h3><p>操作方法をご案内し、必要に応じて保守・改善にも対応します。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 09：料金・サポート ===== -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="sec-head"><span class="sec-en" lang="en">Pricing</span><span class="sec-ja">料金・サポート</span></div>
+      <div class="wrap">
+        <div class="sec-intro reveal">
+          <h2 class="sec-title" id="pricing-title">料金について</h2>
+        </div>
+        <div class="price-group reveal">
+          <div>
+            <p class="price-no" lang="en">01</p>
+            <p class="price-en" lang="en" aria-hidden="true">Estimate</p>
+            <h3 class="price-title">導入費用｜個別お見積もり</h3>
+          </div>
+          <div class="price-body">
+            <p class="price-main">料金はご相談内容に応じて<wbr>個別にお見積もりいたします。</p>
+            <p>業務内容、システムの規模、必要な機能、サポート範囲などによって費用が異なります。</p>
+            <p>まずは現在のお困りごとをお聞かせください。</p>
+          </div>
+        </div>
+        <div class="price-group reveal">
+          <div>
+            <p class="price-no" lang="en">02</p>
+            <p class="price-en" lang="en" aria-hidden="true">Support</p>
+            <h3 class="price-title">継続サポートについて</h3>
+          </div>
+          <div class="price-body">
+            <p class="price-main">導入後も、運用に合わせて<wbr>継続的にサポートします。</p>
+            <p>導入後の保守、業務内容の変更に合わせた機能調整、継続的な改善などもご相談いただけます。</p>
+            <p>保守費用や対応範囲は個別にご案内します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 10：よくある質問 ===== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <h2 class="sec-head" id="faq-title"><span class="sec-en" lang="en">FAQ</span><span class="sec-ja">よくある質問</span></h2>
+      <div class="wrap">
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary><span class="faq-q" lang="en" aria-hidden="true">Q.</span><span class="faq-question">AIに詳しくなくても相談できますか？</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><span class="faq-a" lang="en" aria-hidden="true">A.</span><p>はい。専門知識は必要ありません。現在の業務内容やお困りごとをお聞かせください。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q" lang="en" aria-hidden="true">Q.</span><span class="faq-question">どんな業務が効率化できるか分からないのですが？</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><span class="faq-a" lang="en" aria-hidden="true">A.</span><p>現在の業務を伺いながら、効率化できそうな作業を一緒に整理します。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q" lang="en" aria-hidden="true">Q.</span><span class="faq-question">既存のExcelやスプレッドシートを活用できますか？</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><span class="faq-a" lang="en" aria-hidden="true">A.</span><p>現在お使いのツールを確認し、可能な範囲で既存の環境を活かした方法をご提案します。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q" lang="en" aria-hidden="true">Q.</span><span class="faq-question">導入後のサポートはありますか？</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><span class="faq-a" lang="en" aria-hidden="true">A.</span><p>はい。運用開始後の保守や、業務に合わせた継続的な改善にも対応しています。費用や範囲は個別にご案内します。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q" lang="en" aria-hidden="true">Q.</span><span class="faq-question">費用はどのくらいかかりますか？</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><span class="faq-a" lang="en" aria-hidden="true">A.</span><p>業務内容や必要な機能によって異なります。ヒアリング後にお見積もりします。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 11：お問い合わせ ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner reveal">
+        <p class="contact-en" lang="en" aria-hidden="true">Contact</p>
+        <h2 class="contact-title" id="contact-title">その作業、<wbr>もっとラクに<wbr>できるかもしれません。</h2>
+        <div class="contact-quotes">
+          <p>「こんな作業も効率化できる？」</p>
+          <p>「今使っている管理表を改善したい」</p>
+        </div>
+        <p class="contact-text">そんな小さなご相談から大歓迎です。<br>まずはお気軽にお問い合わせください。</p>
+
+        <!-- メールアドレスは config.js の contact.email で設定（未設定のあいだはボタン無効） -->
+        <a class="btn btn-fill btn-lg is-disabled" href="#contact" aria-disabled="true" data-mail><span data-mail-label>メールで相談する（準備中）</span><span class="plus" aria-hidden="true"></span></a>
+        <p class="contact-sub" data-mail-note>現在、メールでの受付を準備しています。</p>
+
+        <div class="contact-template">
+          <p class="contact-template-title">メールには、次の項目があらかじめ入力されます</p>
+          <ul>
+            <li>お名前</li>
+            <li>店舗名・事業名</li>
+            <li>現在のお困りごと</li>
+            <li>ご相談内容</li>
+          </ul>
+          <p class="contact-template-note">分かる範囲で構いません。書ききれない内容は、ヒアリングで伺います。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 動画編集サイトのご案内（URLは config.js の videoSite.url） ===== -->
+    <section class="other-info" aria-labelledby="other-title" data-video-block hidden>
+      <div class="wrap">
+        <div class="other-box reveal">
+          <div>
+            <p class="other-en" lang="en" aria-hidden="true">Other Service</p>
+            <h2 class="other-title" id="other-title">YouTube動画やショート動画の<br class="br-sp"><wbr><span class="nw">編集も承っております。</span></h2>
+          </div>
+          <a class="btn btn-line btn-lg other-link" href="#" data-video-link target="_blank" rel="noopener noreferrer">動画編集についてはこちら<span class="visually-hidden">（新しいタブで開きます）</span><span class="arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SECTION 12：フッター ===== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand" data-name>谷川 潤</p>
+      <p class="footer-role" data-title>AI活用・業務効率化サポート</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#cases">改善提案例</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#pricing">料金</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li data-video-item hidden><a href="#" data-video-link target="_blank" rel="noopener noreferrer">動画編集サイト<span class="visually-hidden">（新しいタブで開きます）</span></a></li>
+          <li data-privacy-item hidden><a href="#" data-privacy-link>プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy"><small>&copy; <span data-year>2026</span> <span data-name>谷川 潤</span></small></p>
+    </div>
+  </footer>
+</body>
+</html>

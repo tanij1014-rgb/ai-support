@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanij1014-rgb.github.io/ai-support/sitemap.xml

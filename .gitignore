@@ -1,0 +1,14 @@
+# ── 公開しないファイル ─────────────────────────
+# GitHub Pages では、リポジトリに入れたファイルはすべて誰でも見られます。
+# 次のファイルは手元専用です（個人的なメモ・作業用の道具を含むため）。
+README.md
+tests/
+tools/
+.claude/
+
+# システムが自動で作るファイル
+.DS_Store
+*.log
+
+# 公開URL決定前のひな形（sitemap.xml を使用中）
+sitemap.example.xml
